@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block head_title %}Hotels |{{block.super}}{% endblock head_title %}
+
+{% block content %}
+<p>{{object}}</p>
+<h1>{{object.title}}<small>{{object.category}}</small></h1>
+<p>{{object.location}}</p>
+<p>{{object.timestamp}} , {{object.updated | timesince}} ago</p>
+{% endblock content %}
