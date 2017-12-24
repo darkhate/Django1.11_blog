@@ -22,6 +22,7 @@ class HotelsCreateForm(forms.ModelForm):
             'name',
             'locations',
             'category',
+            'slug',
 		]
 	
 

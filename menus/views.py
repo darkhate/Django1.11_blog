@@ -38,7 +38,7 @@ class ItemCreateView(LoginRequiredMixin, CreateView):
 		return context
 
 class ItemUpdateView(LoginRequiredMixin, UpdateView):
-	template_name = 'from.html'
+	template_name = 'menus/hotel-update.html'
 	form_class = ItemForm
 
 	def get_queryset(self):
